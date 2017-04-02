@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/foundation_patterns.css: {}
+  js:
+    js/foundation_patterns.js: {}
