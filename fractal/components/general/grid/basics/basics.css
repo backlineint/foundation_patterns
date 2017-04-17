@@ -1,0 +1,13 @@
+/* Todo - use sass here and/or work into a build process */
+.row.display {
+    background: #eee;
+    font-size: 11px;
+    margin-bottom: 10px;
+    line-height: 2rem;
+    border: solid 1px #c6c6c6;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.row.display .columns:nth-child(2) {
+    background: #e1e1e1;
+}

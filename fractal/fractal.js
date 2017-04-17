@@ -41,3 +41,6 @@ const myCustomisedTheme = mandelbrot({
 });
 
 fractal.web.theme(myCustomisedTheme);
+
+// This will need to be updated as we start including js
+fractal.web.set('static.path', '../css');
