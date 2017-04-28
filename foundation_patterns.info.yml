@@ -44,3 +44,11 @@ features:
   - favicon
   - comment_user_picture
   - node_user_picture
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your sass/ directory by using the Twig namespace:
+# @components
+component-libraries:
+  marketing:
+    paths:
+      - templates/patterns/marketing-site

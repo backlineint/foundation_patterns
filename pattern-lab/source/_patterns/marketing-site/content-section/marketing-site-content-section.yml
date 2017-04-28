@@ -1,0 +1,6 @@
+image: >
+  <img src="https://images.pexels.com/photos/256046/pexels-photo-256046.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
+header: Yeti Snowcone Agency
+subheader: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!
+button: >
+  <a href="#" class="round button small">learn more</a>
