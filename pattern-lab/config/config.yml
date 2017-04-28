@@ -38,3 +38,10 @@ twigFilterExt: filter.php
 twigFunctionExt: function.php
 twigTagExt: tag.php
 twigTestExt: test.php
+plugins:
+  twigNamespaces:
+    enabled: true
+    namespaces:
+      marketing:
+        paths:
+          - ../patterns/marketing-site

@@ -6,7 +6,8 @@ var $          = require('gulp-load-plugins')(),
     extend     = require('extend'),
     fs         = require("fs"),
     gulp       = require('gulp'),
-    importOnce = require('node-sass-import-once');
+    importOnce = require('node-sass-import-once'),
+    sassGlob   = require('gulp-sass-glob');
 
 var options = {};
 
@@ -80,6 +81,7 @@ gulp.task('lint', ['lint:sass']);
 // Build CSS for development environment.
 gulp.task('sass', ['clean:css'], function () {
   return gulp.src(scssFiles)
+    .pipe(sassGlob())
     .pipe($.sourcemaps.init())
     // Allow the options object to override the defaults for the task.
     .pipe($.sass(extend(true, {
