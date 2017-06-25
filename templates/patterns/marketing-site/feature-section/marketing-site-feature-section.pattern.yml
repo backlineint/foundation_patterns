@@ -1,0 +1,47 @@
+marketing_site_feature_section:
+  label: Marketing Site Feature Section
+  description: A responsive feature section to show off the goods.
+  fields:
+    features_headline:
+      type: text
+      label: Headline
+      description: Headline for feature section
+      preview: Yeti Approved Features
+    subheadline:
+      type: text
+      label: Subheadline
+      description: Subheadline for feature section
+      preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit quaerat eos words and phrases.
+    features:
+      type: text
+      label: Features
+      description: One or more features patterns to be included in grid.
+      preview: >
+        <div class="small-12 medium-3 columns">
+          <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+          <h4 class="marketing-site-features-title">Special Snowflake</h4>
+          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <i class="fa fa-angellist" aria-hidden="true"></i>
+          <h4 class="marketing-site-features-title">Friendly Forms </h4>
+          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <i class="fa fa-bullseye" aria-hidden="true"></i>
+          <h4 class="marketing-site-features-title">Special Snowflake</h4>
+          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <i class="fa fa-battery-full" aria-hidden="true"></i>
+          <h4 class="marketing-site-features-title">Lithium Ion</h4>
+          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+  use: "@marketing/feature-section/marketing-site-feature-section.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            marketing-site-feature-section.css: {}
+        js:
+          https://use.fontawesome.com/719374638f.js: { type: external }

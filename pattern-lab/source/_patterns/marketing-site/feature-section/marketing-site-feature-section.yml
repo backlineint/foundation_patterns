@@ -1,0 +1,15 @@
+features_headline: Yeti Approved Features
+subheadline: Lorem ipsum dolor sit amet, consectetur adipisicing elit quaerat eos words and phrases.
+features:
+  - icon_class: fa-snowflake-o
+    title: Special Snowflake
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  - icon_class: fa-angellist
+    title: Friendly Forms
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  - icon_class: fa-bullseye
+    title: Special Snowflake
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  - icon_class: fa-battery-full
+    title: Lithium Ion
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.

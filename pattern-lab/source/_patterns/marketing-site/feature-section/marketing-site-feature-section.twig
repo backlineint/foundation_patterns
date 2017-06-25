@@ -1,0 +1,13 @@
+{% embed "@marketing/feature-section/marketing-site-feature-section.twig" %}
+  {% block features %}
+    {% for feature in features %}
+      {% include "@marketing/feature-section/marketing-site-feature.twig"
+        with {
+          "icon_class": feature.icon_class,
+          "title": feature.title,
+          "description": feature.description
+        }
+      %}
+    {% endfor %}
+  {% endblock %}
+{% endembed %}

@@ -1,0 +1,22 @@
+marketing_site_feature:
+  label: Marketing Site Feature
+  description: A single feature to be included in a marketing site feature section.
+  fields:
+    icon_class:
+      type: text
+      label: Icon Class
+      description: Font Awesome icon class - fa-snowflake-o, fa-angellist, etc.
+      preview: fa-snowflake-o
+    title:
+      type: text
+      label: Title
+      description: Title for Feature
+      preview: Special Snowflake
+    description:
+      type: text
+      label: Description
+      description: Desctiption of the feature
+      preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  use: "@marketing/feature-section/marketing-site-feature.twig"
+  libraries:
+    - ui_patterns/marketing_site_feature_section.pattern
