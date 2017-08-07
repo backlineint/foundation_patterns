@@ -26,6 +26,7 @@ options.rootPath = {
 options.theme = {
   root       : options.rootPath.theme,
   scss       : options.rootPath.theme + 'scss/',
+  patterns   : options.rootPath.theme + 'templates/patterns/',
   css        : options.rootPath.theme + 'css/'
 };
 
@@ -57,6 +58,12 @@ var scssFiles = [
   options.theme.scss + '**/*.scss',
   // Do not open scss partials as they will be included as needed.
   '!' + options.theme.scss + '**/_*.scss',
+];
+
+var patternScssFiles = [
+  options.theme.patterns + '**/*.scss',
+  // Do not open scss partials as they will be included as needed.
+  '!' + options.theme.patterns + '**/_*.scss',
 ];
 
 // The default task.
@@ -96,11 +103,34 @@ gulp.task('sass', ['clean:css'], function () {
     .pipe(gulp.dest(options.theme.css));
 });
 
+// Build CSS for patterns.
+gulp.task('sass-patterns', ['clean:patterns'], function () {
+  return gulp.src(patternScssFiles)
+    .pipe(sassGlob())
+    // Allow the options object to override the defaults for the task.
+    .pipe($.sass(extend(true, {
+      noCache: true,
+      outputStyle: 'compressed',
+      sourceMap: true
+    }, options.scss)).on('error', $.sass.logError))
+    .pipe($.autoprefixer(options.autoprefixer))
+    .pipe($.size({showFiles: true}))
+    .pipe(gulp.dest(options.theme.patterns));
+});
+
 // Clean CSS files.
 gulp.task('clean:css', function () {
   return del([
     options.theme.css + '**/*.css',
     options.theme.css + '**/*.map'
+  ], {force: true});
+});
+
+// Clean Pattern CSS files.
+gulp.task('clean:patterns', function () {
+  return del([
+    options.theme.patterns + '**/*.css',
+    options.theme.patterns + '**/*.map'
   ], {force: true});
 });
 
