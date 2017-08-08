@@ -35,7 +35,7 @@
 @import 'motion-ui';
 
 // Set flex to true to enable the new Foundation 6 flex grid.
-$flex: false;
+$flex: true;
 @include foundation-everything($flex);
 
 @include motion-ui-transitions;

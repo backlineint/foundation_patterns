@@ -7,7 +7,8 @@ var $          = require('gulp-load-plugins')(),
     fs         = require("fs"),
     gulp       = require('gulp'),
     importOnce = require('node-sass-import-once'),
-    sassGlob   = require('gulp-sass-glob');
+    sassGlob   = require('gulp-sass-glob'),
+    exec       = require('child_process').exec;
 
 var options = {};
 
@@ -104,7 +105,7 @@ gulp.task('sass', ['clean:css'], function () {
 });
 
 // Build CSS for patterns.
-gulp.task('sass-patterns', ['clean:patterns'], function () {
+gulp.task('sass-patterns', function () {
   return gulp.src(patternScssFiles)
     .pipe(sassGlob())
     // Allow the options object to override the defaults for the task.
@@ -154,4 +155,30 @@ gulp.task('lint:sass', function () {
     .pipe($.cached('scsslint'))
     .pipe($.sassLint())
     .pipe($.sassLint.format());
+});
+
+// Generates pattern library.
+gulp.task('patternlab', function (cb) {
+  exec('php pattern-lab/core/console --generate', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
+
+
+// Clears all Drupal caches.
+gulp.task('drushcr', function (cb) {
+  exec('drush cr all', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
+
+// watch:patterns - watch for changes in patterns, compile css and build pattern library
+gulp.task('watch:patterns', function() {
+  gulp.watch(['scss/**/*.scss'], ['sass', 'patternlab']);
+  gulp.watch(['templates/patterns/**/*.*'], ['sass-patterns', 'drushcr', 'patternlab']);
+  gulp.watch(['pattern-lab/source/_patterns/**/*.*'], ['patternlab']);
 });
