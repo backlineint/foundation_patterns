@@ -1,1 +1,15 @@
-{% include "@marketing/footer/marketing-site-footer.twig" %}
+{% embed "@marketing/footer/marketing-site-footer.twig" %}
+
+{% block social_menu %}
+  {% for link in social_links %}
+    <li><a href="{{ link.href }}"><i class="fa {{ link.icon_class }}" aria-hidden="true"></i></a></li>
+  {% endfor %}
+{% endblock %}
+
+{% block bottom_menu %}
+  {% for link in bottom_links %}
+    <li>{{ link.link }}</li>
+  {% endfor %}
+{% endblock %}
+
+{% endembed %}

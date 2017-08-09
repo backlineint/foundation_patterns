@@ -1,0 +1,44 @@
+footer_name: Yeti Snowcone
+footer_copy: >
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem, itaque nesciunt quam ducimus atque.</p>
+social_links:
+  - href: http://www.youtube.com
+    icon_class: fa-youtube-square
+  - href: http://www.facebook.com
+    icon_class: fa-facebook-square
+  - href: http://www.twitter.com
+    icon_class: fa-twitter-square
+address: 100 W Rincon<br>San Francisco, CA 94015
+phone: 1 (800) 555-5555
+email: yetirules@fakeemail.com
+additional_title: Instagram
+additional_content: >
+  <div class="row small-up-3">
+    <div class="column column-block">
+      <img src="http://placehold.it/75" alt="" />
+    </div>
+    <div class="column column-block">
+      <img src="http://placehold.it/75" alt="" />
+    </div>
+    <div class="column column-block">
+      <img src="http://placehold.it/75" alt="" />
+    </div>
+    <div class="column column-block">
+      <img src="http://placehold.it/75" alt="" />
+    </div>
+    <div class="column column-block">
+      <img src="http://placehold.it/75" alt="" />
+    </div>
+    <div class="column column-block">
+      <img src="http://placehold.it/75" alt="" />
+    </div>
+  </div>
+copyright: No rights reserved
+bottom_links:
+  - link: <a href="#">Home</a>
+  - link: <a href="#">About</a>
+  - link: <a href="#">Services</a>
+  - link: <a href="#">Works</a>
+  - link: <a href="#">News</a>
+  - link: <a href="#">Contacty</a>
+
