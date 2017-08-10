@@ -39,9 +39,8 @@ twigFunctionExt: function.php
 twigTagExt: tag.php
 twigTestExt: test.php
 plugins:
-  twigNamespaces:
-    enabled: true
-    namespaces:
-      marketing:
-        paths:
-          - ../templates/patterns/marketing-site
+    twigNamespaces:
+        enabled: true
+        namespaces: { marketing: { paths: [../templates/patterns/marketing-site] } }
+    dataInheritance:
+        enabled: true
