@@ -52,3 +52,6 @@ component-libraries:
   marketing:
     paths:
       - templates/patterns/marketing-site
+  global:
+    paths:
+      - templates/patterns/global

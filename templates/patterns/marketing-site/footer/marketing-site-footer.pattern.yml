@@ -1,0 +1,90 @@
+marketing_site_footer:
+  label: Marketing Site Footer
+  description: A responsive footer to house important info and links. Intended to be used in an expanded row.
+  fields:
+    footer_name:
+      type: text
+      label: Footer Name
+      description: Main headline for footer
+      preview: Yeti Snowcone
+    footer_copy:
+      type: text
+      label: Footer Copy
+      description: A paragraph of text included in the footer
+      preview: >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem, itaque nesciunt quam ducimus atque.</p>
+    social_links:
+      type: pattern
+      label: Social Links
+      description: One or more social links patterns to be included in footer.
+      preview: >
+        <li><a href="http://www.youtube.com"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+        <li><a href="http://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="http://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+    address:
+      type: text
+      label: Address
+      description: Address information
+      preview: 100 W Rincon<br>San Francisco, CA 94015
+    phone:
+      type: text
+      label: Phone
+      description: Phone number
+      preview: 1 (800) 555-5555
+    email:
+      type: text
+      label: Email
+      description: Email Address
+      preview: yetirules@fakeemail.com
+    additional_title:
+      type: text
+      label: Additional Title
+      description: Title for additional footer section
+      preview: Instagram
+    additional_content:
+      type: markup
+      label: Additional Content
+      description: Content for additional footer section
+      preview: >
+        <div class="row small-up-3">
+          <div class="column column-block">
+            <img src="http://placehold.it/75" alt="" />
+          </div>
+          <div class="column column-block">
+            <img src="http://placehold.it/75" alt="" />
+          </div>
+          <div class="column column-block">
+            <img src="http://placehold.it/75" alt="" />
+          </div>
+          <div class="column column-block">
+            <img src="http://placehold.it/75" alt="" />
+          </div>
+          <div class="column column-block">
+            <img src="http://placehold.it/75" alt="" />
+          </div>
+          <div class="column column-block">
+            <img src="http://placehold.it/75" alt="" />
+          </div>
+        </div>
+    copyright:
+      type: text
+      label: Copyright
+      description: Copyright text
+      preview: No rights reserved
+    bottom_links:
+      type: pattern
+      label: Bottom Link
+      description: One or more menu link patterns for bottom footer link section.
+      preview: >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+  use: "@marketing/footer/marketing-site-footer.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            marketing-site-footer.css: {}

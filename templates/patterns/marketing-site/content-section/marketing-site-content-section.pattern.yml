@@ -30,5 +30,3 @@ marketing_site_content_section:
         css:
           component:
             marketing-site-content-section.css: {}
-        js:
-          https://use.fontawesome.com/719374638f.js: { type: external }

@@ -1,0 +1,10 @@
+menu_link:
+  label: Menu Link
+  description: A single menu link list item.
+  fields:
+    link:
+      type: markup
+      label: Menu Link
+      description: Menu link.
+      preview: <a href="#">Home</a>
+  use: "@global/menu-link/menu-link.twig"

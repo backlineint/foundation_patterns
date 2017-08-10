@@ -13,7 +13,7 @@ marketing_site_feature_section:
       description: Subheadline for feature section
       preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit quaerat eos words and phrases.
     features:
-      type: text
+      type: pattern
       label: Features
       description: One or more features patterns to be included in grid.
       preview: >
@@ -43,5 +43,3 @@ marketing_site_feature_section:
         css:
           component:
             marketing-site-feature-section.css: {}
-        js:
-          https://use.fontawesome.com/719374638f.js: { type: external }

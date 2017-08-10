@@ -1,0 +1,15 @@
+social_link:
+  label: Social Link
+  description: A single social meaid link list item.
+  fields:
+    url:
+      type: text
+      label: Url
+      description: Url
+      preview: http://twitter.com
+    icon_class:
+      type: text
+      label: Icon Class
+      description: Font Awesome icon class - fa-twitter-square, fa-youtube-square, etc.
+      preview: fa-twitter-square
+  use: "@global/social-link/social-link.twig"
