@@ -2,13 +2,22 @@
 
 {% block social_menu %}
   {% for link in social_links %}
-    <li><a href="{{ link.href }}"><i class="fa {{ link.icon_class }}" aria-hidden="true"></i></a></li>
+    {% include "@global/social-link/social-link.twig"
+      with {
+        "href": link.href,
+        "icon_class": link.icon_class
+      }
+    %}
   {% endfor %}
 {% endblock %}
 
 {% block bottom_menu %}
   {% for link in bottom_links %}
-    <li>{{ link.link }}</li>
+    {% include "@global/menu-link/menu-link.twig"
+      with {
+        "link": link.link
+      }
+    %}
   {% endfor %}
 {% endblock %}
 

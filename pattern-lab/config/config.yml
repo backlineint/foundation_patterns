@@ -41,6 +41,12 @@ twigTestExt: test.php
 plugins:
     twigNamespaces:
         enabled: true
-        namespaces: { marketing: { paths: [../templates/patterns/marketing-site] } }
+        namespaces:
+          marketing:
+            paths:
+              - ../templates/patterns/marketing-site
+          global:
+            paths:
+              - ../templates/patterns/global
     dataInheritance:
         enabled: true
