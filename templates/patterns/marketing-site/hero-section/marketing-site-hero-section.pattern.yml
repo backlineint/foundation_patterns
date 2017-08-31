@@ -1,0 +1,31 @@
+marketing_site_hero_section:
+  label: Marketing Site Hero Section
+  description: A responsive hero section with a background image. On mobile the image shifts focus so the text is readable.
+  fields:
+    header:
+      type: text
+      label: Header
+      description: Header Text
+      preview: Yeti Snowcone Agency
+    subheader:
+      type: text
+      label: Subheader Text
+      description: Subheader Text
+      preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!
+    button:
+      type: link
+      label: More Button
+      description: Button leading to detail view.
+      preview: >
+        <a href="#" class="round button">learn more</a>
+    background_url:
+      type: image
+      label: Backgrund Image
+      description: URL to background image.
+      preview: https://images.pexels.com/photos/8264/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb
+  use: "@marketing/hero-section/marketing-site-hero-section.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            marketing-site-hero-section.css: {}
