@@ -1,3 +1,6 @@
 bower_components
 node_modules
 css/*.map
+
+# Files added on composer install of Pattern Lab
+pattern-lab/source/_twig-components/
