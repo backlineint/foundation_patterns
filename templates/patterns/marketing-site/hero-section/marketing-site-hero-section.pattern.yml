@@ -17,10 +17,10 @@ marketing_site_hero_section:
       label: More Button
       description: Button leading to detail view.
       preview: >
-        <a href="#" class="round button">learn more</a>
+        <a href="#">learn more</a>
     background_url:
       type: image
-      label: Backgrund Image
+      label: Background Image
       description: URL to background image.
       preview: https://images.pexels.com/photos/8264/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb
   use: "@marketing/hero-section/marketing-site-hero-section.twig"
