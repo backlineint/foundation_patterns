@@ -1,0 +1,36 @@
+testimonial_block_vertical:
+  label: Testimonial Block Vertical
+  description: A testimonial block to tell your site visitors how awesome you are.
+  fields:
+    testimonial_avatar:
+      type: image
+      label: Testimonial Avatar
+      description: Associated image.
+      preview: >
+        <img src="https://placehold.it/60" alt="" />
+    testimonial_quote:
+      type: text
+      label: Testimonial Quote Copy
+      description: Testimonial quote copy
+      preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.
+    testimonial_person:
+      type: text
+      label: Testimonial Name
+      description: Name attributed to Testimonial
+      preview: John Doe
+    testimonial_title:
+      type: text
+      label: Testimonial Title
+      description: Title of person attributed to Testimonial
+      preview: Important Person
+    testimonial_company:
+      type: text
+      label: Testimonial Company
+      description: Company of person attributed to Testimonial
+      preview: Some Company
+  use: "@global/testimonial-block-vertical/testimonial-block-vertical.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            testimonial-block-vertical.css: {}
