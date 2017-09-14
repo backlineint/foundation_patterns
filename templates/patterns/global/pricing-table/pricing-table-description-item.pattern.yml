@@ -1,0 +1,14 @@
+pricing_table_description_item:
+  label: Pricing Table Secondary Items
+  description: Pricing Table Secondary Description Items
+  fields:
+    pricing_table_desc_secondary_item:
+      type: text
+      label: Secondary Description Item
+      description: Pricing Table Secondary Description Items
+      preview: >
+        <li>42 Rad Features</li>
+        <li>7GB of Power</li>
+  use: "@global/pricing-table/pricing-table-description-item.twig"
+  libraries:
+    - ui_patterns/pricing_table.pattern

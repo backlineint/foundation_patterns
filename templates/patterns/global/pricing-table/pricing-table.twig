@@ -1,0 +1,17 @@
+<ul class="pricing-table">
+
+    <li class="title">{{ pricing_table_title }}</li>
+
+    <li class="price">{{ pricing_table_price }}</li>
+
+    <li class="description">{{ pricing_table_desc_primary }}</li>
+
+    {% block pricing_table_descriptions %}
+
+        {{ pricing_table_descriptions }}
+
+    {% endblock %}
+
+    <li class="pricing-cta">{{ pricing_table_cta }}</li>
+
+</ul>

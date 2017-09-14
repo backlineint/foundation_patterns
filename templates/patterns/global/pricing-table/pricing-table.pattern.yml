@@ -1,0 +1,38 @@
+pricing_table:
+  label: Pricing Table
+  description: A responsive product pricing table.
+  fields:
+    pricing_table_title:
+      type: text
+      label: Title
+      description: Pricing Table Title.
+      preview: Enterprise
+    pricing_table_price:
+      type: text
+      label: Price
+      description: Pricing Table Price
+      preview: $99.99
+    pricing_table_desc_primary:
+      type: text
+      label: Primary Description
+      description: Pricing Table Primary Description
+      preview: An awesome description
+    pricing_table_descriptions:
+      type: pattern
+      label: Secondary Descriptions
+      description: One or more secondary description patterns to be included in list.
+      preview: >
+        <li>42 Rad Features</li>
+        <li>7GB of Power</li>
+    pricing_table_cta:
+      label: CTA Button
+      type: link
+      description: Button leading to detail view.
+      preview: >
+        <a href="#" class="button">Buy Now</a>
+  use: "@global/pricing-table/pricing-table.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            pricing-table.css: {}
