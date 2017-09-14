@@ -1,6 +1,6 @@
 social_link:
   label: Social Link
-  description: A single social meaid link list item.
+  description: A single social media link list item.
   fields:
     url:
       type: text

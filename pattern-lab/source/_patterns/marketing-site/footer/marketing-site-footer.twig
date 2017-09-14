@@ -2,7 +2,7 @@
 
 {% block social_menu %}
   {% for link in social_links %}
-    {% include "@global/social-link/social-link.twig"
+    {% include "@global-patterns/social-link/social-link.twig"
       with {
         "href": link.href,
         "icon_class": link.icon_class
@@ -13,7 +13,7 @@
 
 {% block bottom_menu %}
   {% for link in bottom_links %}
-    {% include "@global/menu-link/menu-link.twig"
+    {% include "@global-patterns/menu-link/menu-link.twig"
       with {
         "link": link.link
       }

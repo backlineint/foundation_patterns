@@ -1,0 +1,20 @@
+responsive_social_link:
+  label: Responsive Social Link
+  description: A single responsive social media link.
+  fields:
+    href:
+      type: text
+      label: href
+      description: href
+      preview: http://twitter.com
+    icon_class:
+      type: text
+      label: Icon Class
+      description: Font Awesome icon class - fa-twitter, fa-youtube, etc.
+      preview: fa-twitter
+    link_text:
+      type: text
+      label: Link Text
+      description: Text for social link
+      preview: Twitter
+  use: "@global/responsive-social-media-section/responsive-social-link.twig"
