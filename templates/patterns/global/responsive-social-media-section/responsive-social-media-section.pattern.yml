@@ -1,0 +1,27 @@
+responsive_social_media_section:
+  label: Responsive Social Media Section
+  description: A responsive section for social media links with icons or any other featured links.
+  fields:
+    social_links:
+      type: pattern
+      label: Social Links
+      description: One or more social links patterns to be included in footer.
+      preview: >
+        <div class="small-6 medium-3 columns text-center mobile-stack">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+        </div>
+        <div class="small-6 medium-3 columns text-center mobile-stack">
+          <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+        </div>
+        <div class="small-6 medium-3 columns text-center mobile-stack">
+          <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a>
+        </div>
+        <div class="small-6 medium-3 columns text-center mobile-stack">
+          <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+        </div>
+  use: "@global/responsive-social-media-section/responsive-social-media-section.twig"
+  libraries:
+      - pattern:
+          css:
+            component:
+              responsive-social-media-section.css: {}
