@@ -179,6 +179,6 @@ gulp.task('drushcr', function (cb) {
 // watch:patterns - watch for changes in patterns, compile css and build pattern library
 gulp.task('watch:patterns', function() {
   gulp.watch(['scss/**/*.scss'], ['sass', 'patternlab']);
-  gulp.watch(['templates/patterns/**/*.*'], ['sass-patterns', 'drushcr', 'patternlab']);
+  gulp.watch(['templates/patterns/**/*.*'], ['sass-patterns', 'patternlab']);
   gulp.watch(['pattern-lab/source/_patterns/**/*.*'], ['patternlab']);
 });
