@@ -3,6 +3,33 @@
 	{{ patternLabFoot | raw }}
 
 	<script src="https://use.fontawesome.com/719374638f.js"></script>
+
+	{# Include Foundation Dependencies #}
+
+	{# core/drupal library #}
+	<script src="/core/assets/vendor/domready/ready.min.js"></script>
+	<script src="/core/misc/drupalSettingsLoader.js"></script>
+	<script src="/core/misc/drupal.js"></script>
+
+	{# core/jquery library #}
+	<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+
+	{# core/jquery.once library #}
+	<script src="/core/assets/vendor/jquery-once/jquery.once.min.js"></script>
+
+	{# Include Foundation Scripts from Parent Theme #}
+	<script src="/themes/zurb_foundation/js/foundation.js"></script>
+	<script src="/themes/zurb_foundation/js/top_bar_active.js"></script>
+	<script src="/themes/zurb_foundation/js/motion-ui.min.js"></script>
+	<script src="/themes/zurb_foundation/js/status_in_reveal.js"></script>
+	<script src="/themes/zurb_foundation/js/alert_close.js"></script>
+
+	{# Initialize Foundation Scripts #}
+	<script>
+		(function ($) {
+			$(document).foundation();
+		})(jQuery);
+	</script>
 	
 	</body>
 </html>

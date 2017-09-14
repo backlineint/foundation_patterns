@@ -1,0 +1,13 @@
+<div class="callout">
+  <h4>{{ callout_header }}</h4>
+  <p>{{ callout_copy }}</p>
+  <button data-toggle="read-more" href="#">{{ read_more_label }} <i class="fa fa-plus"></i></button>
+  <div class="read-more" id="read-more" data-toggler data-animate="{{ effect_in }} {{ effect_out }}">
+    {{ read_more_content }}
+    <div>
+      <button data-toggle="read-more" href="#">{{ read_more_close_label }}<i class="fa fa-plus"></i></button>
+    </div>
+  </div>
+</div>
+
+

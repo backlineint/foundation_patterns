@@ -1,0 +1,7 @@
+callout_header: Motion UI Animations
+callout_copy: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!
+read_more_content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!
+read_more_label: SHOW MORE
+read_more_close_label: SHOW LESS
+effect_in: fade-in
+effect_out: spin-out

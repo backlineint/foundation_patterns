@@ -1,0 +1,45 @@
+read_more:
+  label: Read More
+  description: A callout with a read-more button/link.
+  fields:
+    callout_header:
+      type: text
+      label: Callout Header
+      description: Header and copy above the read-more link
+      preview: Motion UI Animations
+    callout_copy:
+      type: text
+      label: Callout Copy
+      description: Header and copy above the read-more link
+      preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!
+    read_more_content:
+      type: text
+      label: Read More Content
+      description: The content that is revealed by the read more link
+      preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!
+    read_more_label:
+      type: text
+      label: Read More Link Label
+      description: Button text of read more link.
+      preview: SHOW MORE
+    read_more_close_label:
+      type: text
+      label: Close Read More Link Label
+      description: Button text of close link.
+      preview: SHOW LESS
+    effect_in:
+      type: text
+      label: Effect In
+      decription: Readmore content in effect
+      preview: fade-in
+    effect_out:
+      type: text
+      label: Effect Out
+      decription: Readmore content out effect
+      preview: spin-out
+  use: "@global/read-more/read-more.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            read-more.css: {}
