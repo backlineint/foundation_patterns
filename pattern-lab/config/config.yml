@@ -45,7 +45,7 @@ plugins:
           marketing:
             paths:
               - ../templates/patterns/marketing-site
-          global:
+          global-patterns:
             paths:
               - ../templates/patterns/global
     dataInheritance:
