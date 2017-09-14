@@ -42,9 +42,11 @@ $testimonial-block-vertical-bg: $testimonial-light-blue;
 }
 
 .testimonial-block-vertical-avatar {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .testimonial-block-vertical-name {

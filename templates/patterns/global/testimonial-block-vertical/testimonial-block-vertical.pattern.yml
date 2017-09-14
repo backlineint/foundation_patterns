@@ -7,7 +7,7 @@ testimonial_block_vertical:
       label: Testimonial Avatar
       description: Associated image.
       preview: >
-        <img class="testimonial-block-vertical-avatar" src="https://placehold.it/60" alt="" />
+        <img src="https://placehold.it/60" alt="" />
     testimonial_quote:
       type: text
       label: Testimonial Quote Copy
