@@ -1,0 +1,13 @@
+social_links:
+  - href: http://www.facebook.com
+    icon_class: fa-facebook
+    link_text: Facebook
+  - href: http://www.instagram.com
+    icon_class: fa-instagram
+    link_text: Instagram
+  - href: http://www.pinterest.com
+    icon_class: fa-pinterest
+    link_text: Pinterest
+  - href: http://www.twitter.com
+    icon_class: fa-twitter
+    link_text: Twitter

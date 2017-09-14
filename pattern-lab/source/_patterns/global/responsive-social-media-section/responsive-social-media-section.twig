@@ -1,0 +1,15 @@
+{% embed "@global-patterns/responsive-social-media-section/responsive-social-media-section.twig" %}
+
+{% block social_links %}
+  {% for link in social_links %}
+    {% include "@global-patterns/responsive-social-media-section/responsive-social-link.twig"
+      with {
+        "href": link.href,
+        "icon_class": link.icon_class,
+        "link_text": link.link_text
+      }
+    %}
+  {% endfor %}
+{% endblock %}
+
+{% endembed %}
