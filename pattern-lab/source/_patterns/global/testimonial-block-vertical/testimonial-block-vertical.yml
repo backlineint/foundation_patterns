@@ -1,0 +1,7 @@
+testimonial_avatar: >
+        <img src="https://placehold.it/60" alt="" />
+testimonial_quote:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.
+testimonial_person:  John Doe
+testimonial_title: Important Person
+testimonial_company: Some Company
