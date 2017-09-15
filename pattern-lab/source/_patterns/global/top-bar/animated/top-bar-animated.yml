@@ -1,0 +1,11 @@
+logo: >
+  <img src="/themes/foundation_patterns/logo.svg" alt="Home">
+site_name: Foundation Patterns
+top_links:
+  - link: <li><a href="#">Home</a></li>
+  - link: <li><a href="#">About</a>
+  - link: <li><a href="#">Services</a></li>
+  - link: <li><a href="#">Works</a></li>
+  - link: <li><a href="#">News</a></li>
+  - link: <li><a href="#">Contact</a></li>
+button_link: Categories

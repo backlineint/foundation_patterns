@@ -1,0 +1,13 @@
+{% embed "@global-patterns/top-bar/animated/top-bar-animated.twig" %}
+
+    {% block main_menu %}
+        {% for link in top_links %}
+            {% include "@global-patterns/menu-link/menu-link.twig"
+            with {
+            "link": link.link
+            }
+            %}
+        {% endfor %}
+    {% endblock %}
+
+{% endembed %}
