@@ -1,0 +1,37 @@
+top_bar_animated:
+  label: Top Bar with Animation.
+  description: Responsive, Animated Top Bar Navigation with Site Logo or Site Name, menu navigation links, and a menu CTA.
+  fields:
+    logo:
+      type: image
+      label: Site Logo
+      description: Theme Defined Site Logo.
+      preview: >
+        <img src="/themes/foundation_patterns/logo.svg" alt="Home">
+    site_name:
+      type: text
+      label: Site Name
+      description: Theme Defined Site name, renders when logo is not available.
+      preview: Foundation Patterns
+    top_links:
+      type: pattern
+      label: Top Navigation Links
+      description: One or more menu link patterns for bottom footer link section.
+      preview: >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    button_link:
+      type: text
+      label: CTA Button Text
+      description: Main Menu CTA button Text
+      preview: Categories
+  use: "@global/top-bar/animated/top-bar-animated.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            top-bar-animated.css: {}
