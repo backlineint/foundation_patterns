@@ -1,0 +1,14 @@
+{% embed "@global-patterns/testimonial-slider/testimonial-slider.twig" %}
+  {% block testimonials %}
+    {% for testimonial in testimonials %}
+      {% include "@global-patterns/testimonial-slider/testimonial-item.twig"
+      with {
+      "quote_text": testimonial.quote_text,
+      "image": testimonial.image,
+      "attribution": testimonial.attribution,
+      "attribution_subhead": testimonial.attribution_subhead,
+      }
+      %}
+    {% endfor %}
+  {% endblock %}
+{% endembed %}
