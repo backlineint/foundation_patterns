@@ -64,4 +64,3 @@ libraries-override:
       base:
         css/foundation.min.css: false
         css/motion-ui.min.css: false
-        css/zurb_foundation.css: false
