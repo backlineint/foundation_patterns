@@ -1,0 +1,32 @@
+testimonial_item:
+  label: Testimonial Slider Item
+  description: A testimonial item for the Responsive slider container.
+  fields:
+    quote_text:
+      type: text
+      label: Quote Text
+      description: Quotation text (without quotation mark, please!)
+      preview: Hide when guests come over instantly break out into full speed gallop across the house for no reason mrow touch water with paw then recoil in horror.
+    attribution:
+      type: text
+      label: Attribution
+      description: Quote speaker
+      preview: Fleas Witherspoon
+    attribution_subhead:
+      type: text
+      label: Attribution Subhead
+      description: Quote speaker's credentials
+      preview: Cat World, Inc.
+    image:
+      type: image
+      label: Image
+      description: Testimonal item image
+      preview: <img src="https://placeimg.com/300/300/nature">
+    image_small:
+      type: image
+      label: Image (Small)
+      description: Testimonial item image, small version.
+      preview: <img src="https://placeimg.com/50/50/nature">
+  use: "@global/testimonial-slider/testimonial-item.twig"
+  libraries:
+    - ui_patterns/testimonial_slider.pattern

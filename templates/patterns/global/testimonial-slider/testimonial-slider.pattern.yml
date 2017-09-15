@@ -1,0 +1,54 @@
+testimonial_slider:
+  label: Testimonial Slider
+  description: A Responsive slider container for testimonials and quotes from individuals or companies.
+  fields:
+    testimonials:
+      type: pattern
+      label: Testimonials
+      description: The testimonials
+      preview: <li class="orbit-slide is-active">
+                     <div class="testimonial-slide row">
+                       <div class="small-12 large-9 column">
+                         <div class="row align-middle testimonial-slide-content">
+                           <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+                             <img src="https://placeimg.com/300/300/architecture">
+                           </div>
+                           <div class="small-12 medium-8 column testimonial-slide-text">
+                             <p class="testimonial-slide-quotation">Hide when guests come over instantly break out into full speed gallop across the house for no reason mrow touch water with paw then recoil in horror.</p>
+                             <div class="testimonial-slide-author-container">
+                               <div class="small-profile-pic show-for-small-only">
+                                 <img src="https://placeimg.com/50/50/architecture">
+                               </div>
+                               <p class="testimonial-slide-author-info">Fleas Witherspoon<br><i class="subheader">Cat World Inc.</i></p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </li>
+                   <li class="orbit-slide ">
+                    <div class="testimonial-slide row">
+                      <div class="small-12 large-9 column">
+                        <div class="row align-middle testimonial-slide-content">
+                          <div class="small-12 medium-4 column hide-for-small-only profile-pic">
+                            <img src="https://placeimg.com/300/300/nature">
+                          </div>
+                          <div class="small-12 medium-8 column testimonial-slide-text">
+                            <p class="testimonial-slide-quotation">Squee when guests come over, instantly break out into full speed gallop across the house for no reason mrow touch water with paw then recoil in horror.</p>
+                            <div class="testimonial-slide-author-container">
+                              <div class="small-profile-pic show-for-small-only">
+                                <img src="https://placeimg.com/50/50/nature">
+                              </div>
+                              <p class="testimonial-slide-author-info">Peas Servingspoon<br><i class="subheader">Cat World Inc.</i></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+  use: "@global/testimonial-slider/testimonial-slider.twig"
+  libraries:
+    - pattern:
+        css:
+          component:
+            testimonial-slider.css: {}
