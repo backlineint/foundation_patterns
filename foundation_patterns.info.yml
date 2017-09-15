@@ -55,3 +55,13 @@ component-libraries:
   global:
     paths:
       - templates/patterns/global
+
+
+# Remove an asset.
+libraries-override:
+  zurb_foundation/global:
+    css:
+      base:
+        css/foundation.min.css: false
+        css/motion-ui.min.css: false
+        css/zurb_foundation.css: false
