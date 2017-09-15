@@ -1,0 +1,11 @@
+{% embed "@global-patterns/pricing-table/pricing-table.twig" %}
+    {% block pricing_table_descriptions %}
+        {% for pricing_table_description in pricing_table_descriptions %}
+            {% include "@global-patterns/pricing-table/pricing-table-description-item.twig"
+                with {
+                    "pricing_table_desc_secondary_item": pricing_table_description.pricing_table_desc_secondary_item
+                }
+            %}
+        {% endfor %}
+    {% endblock %}
+{% endembed %}

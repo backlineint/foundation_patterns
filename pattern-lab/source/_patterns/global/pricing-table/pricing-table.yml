@@ -1,0 +1,8 @@
+pricing_table_title: Enterprise
+pricing_table_price: $99.99
+pricing_table_desc_primary: An awesome description
+pricing_table_descriptions:
+  - pricing_table_desc_secondary_item: 42 Rad Features
+  - pricing_table_desc_secondary_item: 7GB of Power
+pricing_table_cta: >
+    <a href="#" class="button">Buy Now</a>
