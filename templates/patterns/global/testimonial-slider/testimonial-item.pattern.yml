@@ -29,7 +29,4 @@ testimonial_item:
       preview: <img src="https://placeimg.com/50/50/nature">
   use: "@global/testimonial-slider/testimonial-item.twig"
   libraries:
-    - pattern:
-        css:
-          component:
-            testimonial-slider.css: {}
+    - ui_patterns/testimonial_slider.pattern
