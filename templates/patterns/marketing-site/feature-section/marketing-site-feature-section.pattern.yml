@@ -16,27 +16,19 @@ marketing_site_feature_section:
       type: pattern
       label: Features
       description: One or more features patterns to be included in grid.
-      preview: >
-        <div class="small-12 medium-3 columns">
-          <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-          <h4 class="marketing-site-features-title">Special Snowflake</h4>
-          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="small-12 medium-3 columns">
-          <i class="fa fa-angellist" aria-hidden="true"></i>
-          <h4 class="marketing-site-features-title">Friendly Forms </h4>
-          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="small-12 medium-3 columns">
-          <i class="fa fa-bullseye" aria-hidden="true"></i>
-          <h4 class="marketing-site-features-title">Special Snowflake</h4>
-          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="small-12 medium-3 columns">
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <h4 class="marketing-site-features-title">Lithium Ion</h4>
-          <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
+      preview:
+        - type: pattern
+          id: marketing_site_feature
+          fields:
+            icon_class: fa-snowflake-o
+            title: Special Snowflake
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        - type: pattern
+          id: marketing_site_feature
+          fields:
+            icon_class: fa-angellist
+            title: Friendly Forms
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   use: "@marketing/feature-section/marketing-site-feature-section.twig"
   libraries:
     - pattern:
